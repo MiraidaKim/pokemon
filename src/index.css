@@ -1,0 +1,94 @@
+
+
+#root {
+  justify-content: center;
+  background-color: #5c5c59;
+  min-height: 100vh;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-color: #3e3d3d;
+  color: rgb(74, 74, 74);
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+.pokedex-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokedex-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.pokedex-loading {
+  margin-top: 40px;
+}
+
+.pokedex-scroll {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.pokedex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.pokedex-card {
+  width: 220px;
+  text-align: center;
+  background: #1e1e1e !important;
+  border: 1px solid #333 !important;
+  border-radius: 10px !important;
+  color: white !important;
+}
+
+.pokedex-image {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin: 20px auto 10px;
+}
+
+.pokemon-name {
+  display: block;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.catch-button {
+  margin-top: 6px;
+  background-color: #ff1616 !important;
+  border-radius: 6px !important;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #222;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #1890ff;
+}
